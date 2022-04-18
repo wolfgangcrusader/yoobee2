@@ -1,0 +1,10 @@
+.homelinks a{
+    text-decoration: none;
+    color: #000;
+}
+
+.homelinks {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+}

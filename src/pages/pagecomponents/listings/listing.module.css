@@ -1,0 +1,92 @@
+.homelinks a{
+    text-decoration: none;
+    color: #000;
+}
+
+.homelinks {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+}
+
+.productwrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.productimg{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.productdetails{
+    margin: 2%;
+    line-height: 2;
+}  
+
+.productsize{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content:space-evenly; 
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.counteroutput {
+    display: flex;
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+}
+ 
+.btncontainer {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-top: 2vh;
+}
+ 
+.controlbtn {
+    font-size: 2vh;
+    background-color: transparent;
+    color: rgb(16, 0, 54);
+    border: 1px solid rgb(16, 0, 54);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+ 
+.controlbtn:hover {
+    background-color: rgb(16, 0, 54);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(16, 0, 54);
+}
+
+.morecontainer{
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content:space-evenly;
+border-bottom: 2px solid black;
+}
+
+@media (max-width: 600px) {
+    .morecontainer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-evenly;
+        border-bottom: 2px solid black;
+        }
+
+    .morecontainer img{
+        width: 100%;
+    }
+
+}
+
+

@@ -1,0 +1,23 @@
+.heroImage {
+  width: 100%;
+  outline: 2px solid black;
+}
+
+.bannercontainer {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .bannercontainer {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../../../images/landing page/heroimage.PNG");
+    background-position: center;
+    background-size: cover;
+    outline: 2px solid black;
+  }
+
+  .heroImage {
+    display: none;
+  }
+}

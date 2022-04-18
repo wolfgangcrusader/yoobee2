@@ -1,0 +1,127 @@
+.loginwrapper{
+   background-color: #FACDF5; 
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   display: flex;
+   flex-direction: row;
+}
+
+.leftcolumn{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    background-image: url(../../../images/login/loginimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 5px solid black;
+}
+
+.rightcolumn{
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    margin-left: 10%; 
+    justify-content: center;
+}
+
+.form{
+width: 80%;
+display: flex;
+flex-direction: column;
+background-color: white;
+
+}
+
+.loginform input, .registerform input{
+width: 90%;
+margin: 2%;
+height: 5vh;
+}
+
+.loginform, .registerform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.formbuttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.formbuffer{
+    width: 80%;
+    background-color: #FACDF5;
+    background-image: url("../../../images/login/9.jpg");
+    background-position: right;
+    background-size: cover;
+    border-bottom: 2px solid black;
+}
+.formbuttons button{
+    background-color: transparent;
+    outline: none;
+    font-size: 2vw; 
+    width: 20%;  
+}
+
+.loginlogin, .regreg{
+    border-top: 2px solid black;
+    border-bottom: none;
+    border-left:none;
+}
+
+.loginreg, .reglogin{
+    background-color: gray;
+    color:dimgrey;
+    border-bottom: 2px solid black;
+    border-left:none;
+}
+
+.submit{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 25%;
+}
+
+@media (max-width: 600px) {
+
+    .loginwrapper{
+        background-color: #FACDF5; 
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+     }
+
+     .leftcolumn{
+         display: none;
+    }
+    
+    .rightcolumn{
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        margin-top: 50%;
+        margin-left: 10%; 
+        justify-content: center;
+    }
+
+    .formbuttons button{
+        background-color: transparent;
+        outline: none;
+        font-size:6vw; 
+        width: 50%;  
+    }
+
+
+
+}

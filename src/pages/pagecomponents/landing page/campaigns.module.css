@@ -1,0 +1,28 @@
+@media (min-width: 600px) {
+  .campaigns {
+    width: 100%;
+  }
+
+  .campaignsimage {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
+  .campaigns h1 {
+    margin-left: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .campaignsimage {
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .campaigns h1 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+  }
+}

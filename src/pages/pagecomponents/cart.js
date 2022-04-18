@@ -3,6 +3,7 @@ import { useCart } from "react-use-cart";
 
 export default function ShoppingCart() {
     const {
+        isEmpty,
         totalItems,
         items,
         updateItemQuantity,
@@ -11,10 +12,17 @@ export default function ShoppingCart() {
         emptyCart
       } = useCart();
 
+      if (isEmpty) return (<div className={styles.cartwrapper}>
+      <h1>Shopping Bag ({totalItems})</h1>
+      <p> Total: $ {cartTotal}.00</p> 
+      <button onClick={emptyCart}>CLEAR CART</button> 
+      <p>YOUR BAG IS EMPTY</p>
+      </div>)
+
       return (
         <>
         <div className={styles.cartwrapper}>
-          <h1>Cart ({totalItems})</h1>
+          <h1>Shopping Bag ({totalItems})</h1>
           <p> Total: $ {cartTotal}.00</p> 
           <button onClick={emptyCart}>CLEAR CART</button> 
           <ul>

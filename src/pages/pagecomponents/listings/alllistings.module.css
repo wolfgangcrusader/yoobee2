@@ -1,5 +1,5 @@
-
-@media (min-width: 600px) {
+/**MEDIA QUERY FOR DESKTOP*/
+@media (min-width: 1000px) {
 .resultspage{
     display: flex;
     flex-direction: row;
@@ -10,8 +10,10 @@
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin-top: 5vh;
     padding-left: 2vw;
+    background: rgb(252,248,214);
+    background: linear-gradient(180deg, rgba(252,248,214,1) 0%, rgba(250,205,245,1) 100%);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .searchcolumn h3{
@@ -44,21 +46,27 @@
     justify-content: center;
     align-items: center;
     display: grid;
+    width: 90%;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 5vh;
-
+    row-gap: 1vh; 
+    column-gap: 1vw;
+    margin-left: 4%;
 }
 
 .productcard{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 60vh;
-    font-size:1vw;
+    width: 100%;
+    text-align: center;
+}
+
+.productcard h3{
+font-size: 2vw;
 }
 
 .productcard img{
     width: 100%;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .productlink{
@@ -75,11 +83,128 @@
     flex-direction: row;
     margin: 3%;
 }
+
+.addtocart{
+    font-size:2vw;
+    background-color: transparent;
 }
 
+.productdetails{
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+}
+}
 
+/**MEDIA QUERY FOR TABLET*/
+@media (min-width: 600px) {
+    .resultspage{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        border-top: 1px solid black;
+    }
+    
+    .searchcolumn{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding-left: 2vw;
+        background: rgb(252,248,214);
+        background: linear-gradient(180deg, rgba(252,248,214,1) 0%, rgba(250,205,245,1) 100%);
+        border-radius: 1px solid black;
+    }
+    
+    .searchcolumn h3{
+        text-decoration: underline;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+    
+    .categories{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .size label{ 
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .colours {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .resultscolumn{
+        display: flex;
+        width: 60%;
+        margin-left: 5%;
+    }
+    
+    .resultscontainer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1vw;
+        row-gap: 1vh;
+    }
 
+    .productcard h3{
+        font-size:1.2vw;
 
+    }
+    
+    .productcard{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .productcard img{
+        width: 100%;
+        border-radius: 1px solid black;
+    }
+    
+    .productlink{
+     text-decoration: none;
+     color: #000;
+    }
+
+    .homelinks a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .homelinks {
+        display: flex;
+        flex-direction: row;
+        margin: 3%;
+        font-size: 1.5vw;
+    }
+    
+    .addtocart{
+        width: 90%;
+        margin-left: 5%;
+        font-size:2vw;
+        background-color: transparent;
+    }
+
+    .productdetails{
+        display: flex;
+        flex-direction: column;
+        height: 8vh;
+        margin-bottom: 1vh;
+    }
+  
+}
+    
+
+/**QUERY FOR MOBILE!!!! */
 @media (max-width: 600px) {
     .homelinks a{
         text-decoration: none;
@@ -90,6 +215,7 @@
         display: flex;
         flex-direction: row;
         margin: 3%;
+        font-size: 3vw;
     }
 
     .resultspage{
@@ -109,6 +235,9 @@
     max-width: 100vw;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    background: rgb(252,248,214);
+    background: linear-gradient(180deg, rgba(252,248,214,1) 0%, rgba(250,205,245,1) 100%);
+    
 }
 
 .categories{
@@ -140,6 +269,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 1vh; 
 }
 
 .productcard{
@@ -167,6 +297,11 @@
     margin-left: 2%;
     margin-top: 2vh;
     margin-bottom: 2vh;
+}
+
+.addtocart{
+    font-size:6vw;
+    background-color: transparent;
 }
 
 }

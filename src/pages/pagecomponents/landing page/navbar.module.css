@@ -161,7 +161,6 @@
   .navbar {
     background: linear-gradient(#facdf5, #fcf8d6);
     max-width: 100%;
-    min-height: 20vh;
     width: 100%;
     -webkit-box-shadow: 0px 5px 3px 0px #000000;
     box-shadow: 0px 5px 3px 0px #000000;
@@ -178,6 +177,7 @@
     width: 100%;
     height: 40%;
     justify-content: center;
+    margin-top: 1vh;
   }
   .topbar h1 {
     margin-top: 2%;

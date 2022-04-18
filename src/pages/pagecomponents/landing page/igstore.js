@@ -22,7 +22,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -34,7 +33,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -46,7 +44,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -58,7 +55,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -72,7 +68,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -84,7 +79,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -96,7 +90,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>
@@ -108,7 +101,6 @@ export default function IGStore() {
           >
             <h1>
               <FaInstagram /> <br />
-              GO TO INSTAGRAM
             </h1>
           </a>
         </div>

@@ -99,17 +99,17 @@ export default function LoginComponent() {
               <input
                 type="username"
                 placeholder="Username"
-                onChange={(e) => SetUsername(e.target.value)}
+                onChange={(e) => SetRegUsername(e.target.value)}
               />
               <input
                 type="email"
                 placeholder="Email"
-                onChange={(e) => SetEmail(e.target.value)}
+                onChange={(e) => SetRegEmail(e.target.value)}
               />
               <input
                 type="password"
                 placeholder="Password"
-                onChange={(e) => SetPassword(e.target.value)}
+                onChange={(e) => SetRegPassword(e.target.value)}
               />
               <input type="password" placeholder="Confirm Password" />
               <div>

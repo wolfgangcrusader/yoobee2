@@ -1,5 +1,4 @@
 import { useParams } from "react-router";
-import {useState} from 'react';
 import PRODUCTS from '../../../data/run_results.json';
 import NavBar from '../../pagecomponents/landing page/navbar.js';
 import styles from './listing.module.css';
@@ -11,6 +10,7 @@ import Footer from '../landing page/footer.js';
 import { useCart } from "react-use-cart";
 
 export default function Listing(){
+  const { addItem } = useCart();
     const { id } = useParams();
     let attribute = PRODUCTS[id];
     let suggestion1 = PRODUCTS[23];
@@ -21,18 +21,6 @@ export default function Listing(){
      0: <p><ImCross/></p>,
      1: <p><FaCheck/></p>
     }
-
-const [counter, setCounter] = useState(0);
- 
-  //increase counter
-  const increase = () => {
-    setCounter(count => count + 1);
-  };
- 
-  //decrease counter
-  const decrease = () => {
-    setCounter(count => count - 1);
-  };
  
     return(
         <>
@@ -59,11 +47,7 @@ const [counter, setCounter] = useState(0);
         XL{SetSize[attribute.XL]}
         </div>  
         <p>Sizing Help?</p>      
-        <div className={styles.btncontainer}>
-      <button className={styles.controlbtn} onClick={decrease}>-</button>
-      <span className={styles.counteroutput}>{counter}</span>
-      <button className={styles.controlbtn} onClick={increase}>+</button>
-        </div>            
+        <button className={styles.controlbtn} onClick={() => addItem(attribute)}>ADD TO CART</button>           
         </div>
         </div>
         <h2 className={styles.moretitle}>MORE LIKE THIS</h2>

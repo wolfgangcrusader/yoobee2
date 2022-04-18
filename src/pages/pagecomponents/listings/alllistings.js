@@ -5,7 +5,7 @@ import NavBar from '../landing page/navbar.js';
 import { useCart } from "react-use-cart";
 import {FcHome} from 'react-icons/fc';
 import {GrCaretNext} from 'react-icons/gr';
-import ReactTooltip from 'react-tooltip';
+
 
 export default function ProductListings(){
     const { addItem } = useCart();
@@ -71,12 +71,16 @@ export default function ProductListings(){
             <div className={styles.productcard}>
             <a className={styles.productlink} href={`/listings/${product.id}`}>
             <img src={product.image} alt="prdctimg"/>
+            <div className={styles.productdetails}>
             <h3>{product.product}</h3>
-            <h3>$ {product.price}.00</h3>    
-            </a>   
-            <button onClick={() => addItem(product)}>
+            <h3>$ {product.price}.00</h3> 
+            </div>   
+            </a>
+            <div className={styles.productbtn}>  
+            <button className={styles.addtocart} onClick={() => addItem(product)}>
             Add to cart
             </button>
+            </div> 
             </div>                  
         ))}
         </div>

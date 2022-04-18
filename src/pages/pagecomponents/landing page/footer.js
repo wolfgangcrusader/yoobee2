@@ -40,6 +40,7 @@ export default function Footer() {
           Cider is a globally-minded, social-first fashion brand. We ship
           anywhere and everywhere, and make clothes for a new generation
         </li>
+        <li><a href="/about">Find Out More About Us</a></li>
       </div>
     </div>
   );

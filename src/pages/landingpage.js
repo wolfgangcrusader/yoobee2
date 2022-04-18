@@ -11,7 +11,7 @@ import Footer from "./pagecomponents/landing page/footer"
 export default function LandingPage() {
 
     return(     
-        <div>
+        <>
             <NavBar/>
             <HeroBanner/>
             <FlashSale/> 
@@ -19,6 +19,6 @@ export default function LandingPage() {
             <Campaigns/> 
             <IGStore/> 
             <Footer/>   
-        </div>
+        </>
     )
 }

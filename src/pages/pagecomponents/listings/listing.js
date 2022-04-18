@@ -66,7 +66,7 @@ const [counter, setCounter] = useState(0);
         </div>            
         </div>
         </div>
-        <h2>MORE LIKE THIS</h2>
+        <h2 className={styles.moretitle}>MORE LIKE THIS</h2>
         <div className={styles.morecontainer}>          
             <a href="/listings/23"><img src={suggestion1.image} alt="s1"/></a>
             <a href="/listings/24"><img src={suggestion2.image} alt="s1"/></a>

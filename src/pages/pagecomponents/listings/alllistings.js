@@ -22,6 +22,7 @@ export default function ProductListings(){
         <div className={styles.resultspage}>       
         <div className={styles.searchcolumn}>
         <h1>FILTER BY:</h1>
+        <div className={styles.setrow1}>
         <div className={styles.categories}>
         <h3>Categories:</h3>
         <label><input type="checkbox" />Tops</label>
@@ -44,6 +45,8 @@ export default function ProductListings(){
         <label><input type="checkbox" />XL</label>
         <label><input type="checkbox" />XXL</label>
         </div>
+        </div>
+        <div className={styles.setrow1}>
         <div className={styles.prices}>
         <h3>Price:</h3>
         <p>$ {price}</p>
@@ -61,24 +64,20 @@ export default function ProductListings(){
         <label><input type="checkbox" />Purple</label>
         </div>
         </div>
-
+        </div>
         <div className={styles.resultscolumn}>
         <div className={styles.resultscontainer}>
-        {products.map((product) => (
-            
+        {products.map((product) => (          
             <div className={styles.productcard}>
             <a className={styles.productlink} href={`/listings/${product.id}`}>
             <img src={product.image} alt="prdctimg"/>
             <h3>{product.product}</h3>
             <h3>$ {product.price}.00</h3>    
-            </a>
-            <ReactTooltip/> 
-           <button data-event='click focus' data-tip="Product Added to Cart" data-delay-hide='1000' 
-           onClick={() => addItem(product)}>
+            </a>   
+            <button onClick={() => addItem(product)}>
             Add to cart
-            </button> 
-            </div>
-                    
+            </button>
+            </div>                  
         ))}
         </div>
         </div>

@@ -5,7 +5,7 @@ import LoginComponent from "./pages/pagecomponents/login/login.js";
 import Listing from "./pages/pagecomponents/listings/listing.js";
 import ListingPage from "./pages/pagecomponents/listings/alllistings.js";
 import ShoppingCart from "./pages/pagecomponents/cart.js";
-import Account from "./pages/pagecomponents/login/account.js"
+import AboutPage from "./pages/pagecomponents/about.js";
 import "react-alice-carousel/lib/alice-carousel.css";
 import './App.css';
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<LandingPage/>} />
         <Route path="/cart" element={<ShoppingCart/>} />
         <Route path="/login" element={<LoginComponent/>} />
-        <Route path="/account" element={<Account/>} />
+        <Route path="/about" element={<AboutPage/>} />
         <Route path="/listings" element={<ListingPage />} />
         <Route path="/listings/:id" element={<Listing />} />
       </Routes>

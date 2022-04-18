@@ -17,7 +17,6 @@ import CelebImg from "../../../images/landing page/celeb.png";
 import MoodImg from "../../../images/landing page/mood.png";
 import Sale1Img from "../../../images/landing page/sale1.png";
 import Sale2Img from "../../../images/landing page/sale2.png";
-import axios from "axios";
 import ShoppingCart from "../cart.js";
 
 export default function NavBar() {
@@ -28,6 +27,7 @@ export default function NavBar() {
   const [Sale, setSale] = useState({ display: "none" });
   const [showcart, setShowCart] = useState(false);
 
+//SHOWS THE MOBILE MENU ONCLICK OF THE BAR ICON//
   function ShowMobileMenu() {
     let mobilemenu = document.getElementById("mobilenavbar");
     if (mobilemenu.style.display === "block") {
@@ -39,9 +39,9 @@ export default function NavBar() {
     }
   }
 
+  //LOGIN TAKES YOU TO LOGIN SCREEN//
   const LoginFunction = (e) => {
-      window.location.href = "/login";
-    
+      window.location.href = "/login";  
   };
 
   return (

@@ -1,0 +1,34 @@
+.aboutpage{
+    background-color: #c1acc8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutwrapper{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+.contactform {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;  
+}
+
+.contactform form{
+display: flex;
+flex-direction: column;
+width: 80%;
+}
+
+.title{
+margin-top: 5vh;
+text-align: center;
+}

@@ -1,92 +1,185 @@
-.homelinks a{
-    text-decoration: none;
-    color: #000;
+.homelinks a {
+  text-decoration: none;
+  color: #000;
+}
+
+.homelinks a:hover {
+  font-weight: bold;
 }
 
 .homelinks {
-    display: flex;
-    flex-direction: row;
-    margin: 3%;
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  font-size: 1vw;
 }
 
-.productwrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 1px solid black;
+.productwrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
 }
 
-.productimg{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+.productimg {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px solid black;
+  margin-top: 2vh;
 }
 
-.productdetails{
-    margin: 2%;
-    line-height: 2;
-}  
+.productdetails {
+  margin: 2%;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
 
-.productsize{
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    justify-content:space-evenly; 
-    margin-bottom: 2vh;
-    margin-top: 2vh;
+.productsize {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .counteroutput {
-    display: flex;
-    font-size: 2vw;
-    color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
 }
- 
+
 .btncontainer {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  column-gap: 20px;
+  margin-top: 2vh;
+}
+
+.controlbtn {
+  font-size: 2vh;
+  background-color: transparent;
+  color: rgb(16, 0, 54);
+  border: 1px solid rgb(16, 0, 54);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.controlbtn:hover {
+  background-color: rgb(16, 0, 54);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(16, 0, 54);
+}
+
+.morecontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  border-bottom: 2px solid black;
+}
+
+@media (max-width: 600px) {
+  .morecontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+
+  .moretitle {
+    text-align: center;
+    font-size:5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .morecontainer img {
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .homelinks {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    font-size: 5vw;
+  }
+
+  .productwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+  }
+
+  .productimg,
+  .productdetails {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .productimg h1,
+  .productdetails h1 {
+    font-size: 6vw;
+  }
+
+  .productimg h3,
+  .productdetails h3 {
+    font-size: 5vw;
+  }
+
+  .productsize {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+  .counteroutput {
+    display: flex;
+    font-size: 7vw;
+    color: rgb(0, 0, 0);
+  }
+
+  .btncontainer {
     display: flex;
     justify-content: left;
     flex-direction: row;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     column-gap: 20px;
     margin-top: 2vh;
-}
- 
-.controlbtn {
-    font-size: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .controlbtn {
+    font-size: 5vh;
     background-color: transparent;
     color: rgb(16, 0, 54);
     border: 1px solid rgb(16, 0, 54);
     cursor: pointer;
     transition: 0.2s ease-in-out;
-}
- 
-.controlbtn:hover {
+  }
+
+  .controlbtn:hover {
     background-color: rgb(16, 0, 54);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(16, 0, 54);
+  }
 }
-
-.morecontainer{
-display: flex;
-flex-direction: row;
-width: 100%;
-justify-content:space-evenly;
-border-bottom: 2px solid black;
-}
-
-@media (max-width: 600px) {
-    .morecontainer{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content:space-evenly;
-        border-bottom: 2px solid black;
-        }
-
-    .morecontainer img{
-        width: 100%;
-    }
-
-}
-
-

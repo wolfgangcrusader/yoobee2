@@ -1,10 +1,8 @@
 import styles from './cart.module.css';
-import { useState} from 'react';
 import { useCart } from "react-use-cart";
 
 export default function ShoppingCart() {
     const {
-        isEmpty,
         totalItems,
         items,
         updateItemQuantity,

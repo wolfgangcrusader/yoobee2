@@ -1,11 +1,13 @@
 import styles from './about.module.css';
 import NavBar from './landing page/navbar';
+import Footer from './landing page/footer';
 
 export default function AboutPage() {
 
     return(
-        <div className={styles.aboutpage}>
+        <>
         <NavBar/>
+        <div className={styles.aboutpage}>       
         <div className={styles.aboutwrapper}>
             <h1>Who are we?</h1>
             <p>Cider is an aesthetic.
@@ -45,5 +47,7 @@ to help you celebrate yourself and tell yours.</p>
                         </form>
         </div>       
         </div>
+        <Footer/>
+        </>
     )
 }
